@@ -1377,6 +1377,72 @@ case "$DEVICE" in
             -e 's block/bootdevice/by-name/oem mmcblk0p30 ' \
             "$@"
         ;;
+    "sailfish")
+        sed -i \
+            -e 's block/bootdevice/by-name/aboot_a sda17 ' \
+            -e 's block/bootdevice/by-name/aboot_b sda18 ' \
+            -e 's block/bootdevice/by-name/apdp_a sda29 ' \
+            -e 's block/bootdevice/by-name/apdp_b sda30 ' \
+            -e 's block/bootdevice/by-name/board_info sdf1 ' \
+            -e 's block/bootdevice/by-name/boot_a sda19 ' \
+            -e 's block/bootdevice/by-name/boot_b sda20 ' \
+            -e 's block/bootdevice/by-name/bootlocker_a sda1 ' \
+            -e 's block/bootdevice/by-name/bootlocker_b sda2 ' \
+            -e 's block/bootdevice/by-name/cdt sdd12 ' \
+            -e 's block/bootdevice/by-name/cmnlib32_a sda13 ' \
+            -e 's block/bootdevice/by-name/cmnlib32_b sda14 ' \
+            -e 's block/bootdevice/by-name/cmnlib64_a sda15 ' \
+            -e 's block/bootdevice/by-name/cmnlib64_b sda16 ' \
+            -e 's block/bootdevice/by-name/ddr sdd11 ' \
+            -e 's block/bootdevice/by-name/devcfg_a sda23 ' \
+            -e 's block/bootdevice/by-name/devcfg_b sda24 ' \
+            -e 's block/bootdevice/by-name/devinfo sdf4 ' \
+            -e 's block/bootdevice/by-name/devinfobak sdd5 ' \
+            -e 's block/bootdevice/by-name/dip sdd7 ' \
+            -e 's block/bootdevice/by-name/dpo sdd6 ' \
+            -e 's block/bootdevice/by-name/frp sde1 ' \
+            -e 's block/bootdevice/by-name/fsc sdd8 ' \
+            -e 's block/bootdevice/by-name/fsg sdf3 ' \
+            -e 's block/bootdevice/by-name/hosd_a sda21 ' \
+            -e 's block/bootdevice/by-name/hosd_b sda22 ' \
+            -e 's block/bootdevice/by-name/hyp_a sda11 ' \
+            -e 's block/bootdevice/by-name/hyp_b sda12 ' \
+            -e 's block/bootdevice/by-name/keymaster_a sda3 ' \
+            -e 's block/bootdevice/by-name/keymaster_b sda4 ' \
+            -e 's block/bootdevice/by-name/metadata sde5 ' \
+            -e 's block/bootdevice/by-name/mfg sdf2 ' \
+            -e 's block/bootdevice/by-name/misc sdd1 ' \
+            -e 's block/bootdevice/by-name/modem_a sda25 ' \
+            -e 's block/bootdevice/by-name/modem_b sda26 ' \
+            -e 's block/bootdevice/by-name/modemst1 sdd9 ' \
+            -e 's block/bootdevice/by-name/modemst2 sdd10 ' \
+            -e 's block/bootdevice/by-name/msadp_a sda27 ' \
+            -e 's block/bootdevice/by-name/msadp_b sda28 ' \
+            -e 's block/bootdevice/by-name/persist sdd3 ' \
+            -e 's block/bootdevice/by-name/pg1fs sde3 ' \
+            -e 's block/bootdevice/by-name/pg2fs sde4 ' \
+            -e 's block/bootdevice/by-name/pmic_a sda9 ' \
+            -e 's block/bootdevice/by-name/pmic_b sda10 ' \
+            -e 's block/bootdevice/by-name/ramdump sde2 ' \
+            -e 's block/bootdevice/by-name/reserve0 sda36 ' \
+            -e 's block/bootdevice/by-name/reserve3 sdd13 ' \
+            -e 's block/bootdevice/by-name/reserve4 sde6 ' \
+            -e 's block/bootdevice/by-name/reserve5 sdf5 ' \
+            -e 's block/bootdevice/by-name/rpm_a sda7 ' \
+            -e 's block/bootdevice/by-name/rpm_b sda8 ' \
+            -e 's block/bootdevice/by-name/sec sdd4 ' \
+            -e 's block/bootdevice/by-name/ssd sdd2 ' \
+            -e 's block/bootdevice/by-name/system_a sda33 ' \
+            -e 's block/bootdevice/by-name/system_b sda34 ' \
+            -e 's block/bootdevice/by-name/tz_a sda5 ' \
+            -e 's block/bootdevice/by-name/tz_b sda6 ' \
+            -e 's block/bootdevice/by-name/userdata sda35 ' \
+            -e 's block/bootdevice/by-name/vendor_a sda31 ' \
+            -e 's block/bootdevice/by-name/vendor_b sda32 ' \
+            -e 's block/bootdevice/by-name/xbl_a sdb1 ' \
+            -e 's block/bootdevice/by-name/xbl_b sdc1 ' \
+            "$@"
+        ;;
     *)
         cat <<EOF
 
